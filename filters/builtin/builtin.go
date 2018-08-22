@@ -93,6 +93,7 @@ func MakeRegistry() filters.Registry {
 		tee.NewTeeDeprecated(),
 		tee.NewTeeNoFollow(),
 		auth.NewBasicAuth(),
+		auth.NewWebhook(),
 		cookie.NewRequestCookie(),
 		cookie.NewResponseCookie(),
 		cookie.NewJSCookie(),
